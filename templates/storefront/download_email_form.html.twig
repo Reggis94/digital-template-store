@@ -1,0 +1,19 @@
+<h1>Thank you for your trust!</h1>
+<p>To download the files of your product, type your email in the bar below</p>
+{{ form(form) }}
+
+
+	<div>
+		<div class="">
+			<img class="img-fluid" style="max-width: 100%; height: auto;" src="{{ asset('uploads/products/' ~ product.folderPath ~ '/1.png') }}" alt="Product Image">
+		</div>
+		<div>
+			<div>
+				<h1>{{ product.title }}</h1>
+				<p>{{ product.description }}</p>
+			</div>
+		</div>
+		<a href="{{path('storefront_download_email_form', {id: product.id})}}"></a>
+	</div>
+</div>
+<style></style>
